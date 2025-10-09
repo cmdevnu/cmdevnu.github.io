@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CSS Menu Extra Exercise</title>
+    <style type="text/css">
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .MenuContainer {
+            width: 250px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden; /* This keeps the corners rounded */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .MenuTitle {
+            padding: 12px;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2em;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+        }
+
+        .MenuList {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: white;
+        }
+
+        .MenuItem {
+            padding: 12px 20px;
+            border-top: 1px solid #eee;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .MenuItem::before {
+            content: "•";
+            margin-right: 10px;
+            color: #555;
+        }
+
+        .MenuItem:hover {
+            background-color: #ffffe0; /* A light yellow */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="MenuContainer">
+        <div class="MenuTitle">Main Menu</div>
+        <ul class="MenuList">
+            <li class="MenuItem">Home</li>
+            <li class="MenuItem">Products</li>
+            <li class="MenuItem">About Us</li>
+            <li class="MenuItem">Services</li>
+            <li class="MenuItem">Contact</li>
+        </ul>
+    </div>
+
+</body>
+</html>
