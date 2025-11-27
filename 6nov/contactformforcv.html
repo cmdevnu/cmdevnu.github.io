@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Contact Form</title>
+</head>
+<body>
+  <form action="#" method="post">
+
+    <!-- Basic info -->
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" />
+    <br>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" />
+    <br>
+
+    <label for="phone">Phone</label>
+    <input type="tel" id="phone" name="phone" />
+    <br>
+
+    <label for="address">Address</label>
+    <input type="text" id="address" name="address" />
+    <br><br>
+
+    <!-- ✅ Major (checkbox style like screenshot) -->
+    <label>Select your major</label><br>
+
+    <input type="checkbox" id="mis" name="major" value="MIS">
+    <label for="mis">MIS</label><br>
+
+    <input type="checkbox" id="ice" name="major" value="ICE">
+    <label for="ice">ICE</label><br>
+
+    <input type="checkbox" id="bis" name="major" value="BIS">
+    <label for="bis">BIS</label><br>
+
+    <input type="checkbox" id="bda" name="major" value="BDA">
+    <label for="bda">BDA</label><br>
+
+    <input type="checkbox" id="mba" name="major" value="MBA">
+    <label for="mba">MBA</label>
+    <br><br>
+
+    <!-- Preferred contact -->
+    <label>Your preferred contact</label><br>
+    <input type="radio" name="preferred_contact" id="pref_email" value="email">
+    <label for="pref_email">Email</label><br>
+
+    <input type="radio" name="preferred_contact" id="pref_phone" value="phone">
+    <label for="pref_phone">Phone</label>
+    <br><br>
+
+    <!-- Gender -->
+    <label for="gender">Gender</label><br>
+    <select name="gender" id="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+    <br><br>
+
+    <!-- File upload -->
+    <input type="file" name="file" id="file">
+    <br><br>
+
+    <!-- Textarea -->
+    <label for="message">Your message</label><br>
+    <textarea name="message" id="message" rows="5"></textarea>
+    <br><br>
+
+    <!-- Submit / Reset -->
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+  </form>
+</body>
+</html>
