@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Mouse Events Demo</h2>
+
+<div id="box" style="width:200px;height:200px;background:lightgray;">
+    Move or click inside this box
+</div>
+
+<p id="output">Event: none</p>
+
+<script>
+var box = document.getElementById("box")
+var out = document.getElementById("output")
+
+box.onclick = function(){ out.innerHTML = "Event: click" }
+box.ondblclick = function(){ out.innerHTML = "Event: double click" }
+box.onmousedown = function(){ out.innerHTML = "Event: mousedown" }
+box.onmouseup = function(){ out.innerHTML = "Event: mouseup" }
+box.onmouseover = function(){ out.innerHTML = "Event: mouseover" }
+box.onmouseout = function(){ out.innerHTML = "Event: mouseout" }
+box.onmousemove = function(){ out.innerHTML = "Event: mousemove" }
+box.onmouseenter = function(){ out.innerHTML = "Event: mouseenter" }
+box.onmouseleave = function(){ out.innerHTML = "Event: mouseleave" }
+</script>
+
+</body>
+</html>

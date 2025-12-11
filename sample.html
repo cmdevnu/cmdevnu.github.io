@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu Demo</title>
+
+    <style>
+        /* Navigation bar */
+        nav {
+            background-color: #222;
+            padding: 15px;
+            text-align: center;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 20px;
+        }
+
+        nav a:hover {
+            color: #ff4444;
+        }
+
+        /* Buttons */
+        button {
+            display: block;
+            margin: 15px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body id="pageBody">
+
+    <!-- Navigation Menu -->
+    <nav id="mainNav">
+        <a href="#">Trang chủ</a>
+        <a href="#">Sách &copy;</a>
+        <a href="#">Tác giả &trade;</a>
+        <a href="#">Liên hệ</a>
+    </nav>
+
+    <!-- Interaction Buttons -->
+    <button onclick="changeColor()">Đổi màu chữ</button>
+    <button onclick="toggleMenu()">Ẩn / Hiện Menu</button>
+    <button onclick="toggleBackground()">Đổi màu nền</button>
+
+    <script>
+        let isRed = false;
+        let bgSwitch = false;
+
+        // Toggle text color
+        function changeColor() {
+            const nav = document.getElementById("mainNav");
+
+            nav.querySelectorAll("a").forEach(a => {
+                a.style.color = isRed ? "white" : "red";
+            });
+
+            isRed = !isRed;
+        }
+
+        // Toggle menu ON/OFF
+        function toggleMenu() {
+            const nav = document.getElementById("mainNav");
+            nav.style.display = nav.style.display === "none" ? "block" : "none";
+        }
+
+        // Toggle background color
+        function toggleBackground() {
+            const body = document.getElementById("pageBody");
+
+            body.style.backgroundColor = bgSwitch ? "white" : "#e6e6e6";
+
+            bgSwitch = !bgSwitch;
+        }
+    </script>
+
+</body>
+</html>
